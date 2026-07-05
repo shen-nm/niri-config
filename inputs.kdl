@@ -1,0 +1,27 @@
+// =============================================================================
+// INPUT DEVICES & PERIPHERALS CONFIGURATION
+// =============================================================================
+
+input {
+    keyboard {
+        xkb {
+            // Add layout preferences here if needed (e.g., layout "us")
+        }
+        // Enable numlock on startup
+        numlock
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+
+    mouse {
+        accel-speed -0.7
+        accel-profile "flat"
+    }
+
+    trackpoint {
+        // Leave empty or add adjustments if utilizing a trackpoint node
+    }
+}

@@ -1,0 +1,22 @@
+// =============================================================================
+// STARTUP DAEMONS & SUBSYSTEM INITIALIZATION
+// =============================================================================
+
+// Core Wayland Display & Session Sync
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri" "XDG_SESSION_DESKTOP=niri"
+
+// XWayland Compatibility Layer (For legacy apps and gaming)
+spawn-at-startup "xwayland-satellite"
+
+// Noctalia Desktop Shell (Replaces Waybar, Wallpapers, and Notification Daemons)
+spawn-at-startup "noctalia-shell"
+
+// Polkit Security Authentication Agent (Replaces KDE Polkit Agent)
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+
+// Secure Keyring Architecture (Stores local app/browser credentials)
+spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
+
+// Hardware System Tray Applets
+spawn-at-startup "nm-applet" "--indicator"
+spawn-at-startup "blueman-applet"

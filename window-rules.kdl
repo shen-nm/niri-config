@@ -1,0 +1,26 @@
+// =============================================================================
+// WINDOW RULES & APPLICATION INTERCEPTIONS
+// =============================================================================
+
+// Work around WezTerm's initial configure dimensions bug
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+// Enforce floating layers for media popups
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"firefox$"#
+    open-maximized false
+}
+
+// Global aesthetic configuration for applications window geometry
+window-rule {
+    geometry-corner-radius 7
+    clip-to-geometry true
+}
