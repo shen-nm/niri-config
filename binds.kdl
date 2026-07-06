@@ -12,8 +12,8 @@ binds {
 
     // Core Applications Launchpad
     Mod+Return      hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    Mod+Ctrl+Return hotkey-overlay-title="Application Launcher" { spawn "fuzzel"; }
-    Mod+E           hotkey-overlay-title="File Manager" { spawn "nautilus"; }
+    Mod+Space       hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+E           hotkey-overlay-title="File Manager" { spawn "kitty" "yazi"; }
     Mod+B           hotkey-overlay-title="Web Browser" { spawn "firefox"; }
 
     // Media & Hardware Controls
