@@ -28,6 +28,6 @@ input {
     }
     
     // Give up control of power key
-    // disable-power-key-handling
+    disable-power-key-handling
 
 }
