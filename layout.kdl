@@ -36,8 +36,3 @@ layout {
         // Define system margins if building panels external to Noctalia
     }
 }
-
-layer-rule {
-  match namespace="^noctalia-backdrop"
-  place-within-backdrop true
-}
