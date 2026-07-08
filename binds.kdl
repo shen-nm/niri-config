@@ -11,11 +11,11 @@ binds {
     Mod+Escape      allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // Core Applications Launchpad
-    Mod+Return      hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    Mod+Space       hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
-    Mod+E           hotkey-overlay-title="File Manager" { spawn "kitty" "yazi"; }
-    Mod+B           hotkey-overlay-title="Web Browser" { spawn "zen-browser"; }
-    Mod+N           hotkey-overlay-title="Notes" { spawn "obsidian"; }
+    Mod+Return          hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
+    Mod+Shift+Return    hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+E               hotkey-overlay-title="File Manager" { spawn "kitty" "yazi"; }
+    Mod+B               hotkey-overlay-title="Web Browser" { spawn "zen-browser"; }
+    Mod+N               hotkey-overlay-title="Notes" { spawn "obsidian"; }
 
 
     // Media & Hardware Controls
