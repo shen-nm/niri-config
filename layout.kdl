@@ -17,16 +17,11 @@ layout {
     focus-ring {
         off // Set to 'on' if you prefer an active boundary highlight ring
         width 2
-        active-color "#910626"
-        inactive-color "#504661"
     }
 
     border {
         off // Set to 'on' if you prefer static window outlines
         width 2
-        active-color "#4c3078"
-        inactive-color "#504661"
-        urgent-color "#9b0000"
     }
 
     shadow {
