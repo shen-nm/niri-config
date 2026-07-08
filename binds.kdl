@@ -150,5 +150,5 @@ binds {
     Print       { screenshot; }
     Ctrl+Print  { screenshot-screen; }
     Alt+Print   { screenshot-window; }
-    Mod+Shift+S { screenshot; }
+    Mod+Shift+S { spawn "noctalia" "msg" "screenshot-region"; }
 }
