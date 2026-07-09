@@ -31,6 +31,7 @@ binds {
     XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
     Mod+Shift+Q           { spawn "noctalia" "msg" "panel-toggle" "session"; }
+    Mod+Shift+L           { spawn "noctalia" "msg" "session" "lock"; }
     
     // Window Management & Navigation Rules
     Mod+O repeat=false { toggle-overview; }
@@ -48,20 +49,20 @@ binds {
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
-    Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
+    // Mod+H     { focus-column-left; }
+    // Mod+J     { focus-window-down; }
+    // Mod+K     { focus-window-up; }
+    // Mod+L     { focus-column-right; }
 
     // Window Movement Controls
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+Up    { move-window-up; }
     Mod+Ctrl+Right { move-column-right; }
-    Mod+Ctrl+H     { move-column-left; }
-    Mod+Ctrl+J     { move-window-down; }
-    Mod+Ctrl+K     { move-window-up; }
-    Mod+Ctrl+L     { move-column-right; }
+    // Mod+Ctrl+H     { move-column-left; }
+    // Mod+Ctrl+J     { move-window-down; }
+    // Mod+Ctrl+K     { move-window-up; }
+    // Mod+Ctrl+L     { move-column-right; }
 
     // Column Group Operations
     Mod+BracketLeft   { consume-or-expel-window-left; }
@@ -112,18 +113,18 @@ binds {
     Mod+Shift+Ctrl+Down  { focus-monitor-down; }
     Mod+Shift+Ctrl+Up    { focus-monitor-up; }
     Mod+Shift+Ctrl+Right { focus-monitor-right; }
-    Mod+Shift+Ctrl+H     { focus-monitor-left; }
-    Mod+Shift+Ctrl+J     { focus-monitor-down; }
-    Mod+Shift+Ctrl+K     { focus-monitor-up; }
-    Mod+Shift+Ctrl+L     { focus-monitor-right; }
+    // Mod+Shift+Ctrl+H     { focus-monitor-left; }
+    // Mod+Shift+Ctrl+J     { focus-monitor-down; }
+    // Mod+Shift+Ctrl+K     { focus-monitor-up; }
+    // Mod+Shift+Ctrl+L     { focus-monitor-right; }
     Mod+Shift+Left  { move-column-to-monitor-left; }
     Mod+Shift+Down  { move-column-to-monitor-down; }
     Mod+Shift+Up    { move-column-to-monitor-up; }
     Mod+Shift+Right { move-column-to-monitor-right; }
-    Mod+Shift+H     { move-column-to-monitor-left; }
-    Mod+Shift+J     { move-column-to-monitor-down; }
-    Mod+Shift+K     { move-column-to-monitor-up; }
-    Mod+Shift+L     { move-column-to-monitor-right; }
+    // Mod+Shift+H     { move-column-to-monitor-left; }
+    // Mod+Shift+J     { move-column-to-monitor-down; }
+    // Mod+Shift+K     { move-column-to-monitor-up; }
+    // Mod+Shift+L     { move-column-to-monitor-right; }
 
     // Direct Discrete Workspace Index Selection
     Mod+1 { focus-workspace 1; }
