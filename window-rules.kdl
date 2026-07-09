@@ -32,7 +32,7 @@ window-rule {
 
 // Fix Steam notifications popping up in the center of the screen
 window-rule {
-    match app-id=r#"^[Ss]team$"# title=r#"^notificationtoasts_\d+_desktop$"#
+    match app-id=r#"^[Ss]team$"# title=r#"^notificationtoasts"#
     open-floating true
     default-floating-position x=20 y=20 relative-to="bottom-right"
     open-focused false
