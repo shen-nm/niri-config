@@ -24,3 +24,8 @@ window-rule {
     geometry-corner-radius 7
     clip-to-geometry true
 }
+
+// Global Border Fix for transparent windows
+window-rule {
+    draw-border-with-background false
+}

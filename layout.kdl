@@ -20,7 +20,7 @@ layout {
     }
 
     border {
-        off // Set to 'on' if you prefer static window outlines
+        on // Set to 'on' if you prefer static window outlines
         width 2
     }
 
