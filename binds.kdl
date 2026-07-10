@@ -154,4 +154,14 @@ binds {
 
     // Noctalia Screenshot Engine
     Mod+Shift+S { spawn "noctalia" "msg" "screenshot-region"; }
+
+    // Scratchpad Binds
+    // Toggles the scratchpad terminal in and out of view
+    Mod+T { spawn "sh" "-c" r#"
+        if niri msg action focus-window --match title="^scratchpad-term$"; then
+            niri msg action move-window-to-workspace "scratchpad-hidden"
+        else
+            kitty -T scratchpad-term || alacritty -T scratchpad-term || foot -T scratchpad-term
+        fi
+    "#; }    
 }
