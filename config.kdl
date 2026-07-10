@@ -17,9 +17,10 @@ debug {
 // Component Modules Import Loop
 include "inputs.kdl"
 include "outputs.kdl"
+include "noctalia.kdl"
 include "layout.kdl"
 include "window-rules.kdl"
 include "startup.kdl"
 include "binds.kdl"
 include "cursor.kdl"
-include "noctalia.kdl"
+
