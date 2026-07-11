@@ -22,7 +22,7 @@ layout {
     border {
         on // Set to 'on' if you prefer static window outlines
         width 2
-        inactive-color "#1d212000"
+        inactive-color "#4d4d4d5a"
     }
 
     shadow {
